@@ -1,0 +1,37 @@
+.main-container{
+    width: 50%;
+    align-items: center;
+}
+.image-container{
+    width: 20rem;
+    height: 20rem;
+    overflow: auto;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+}
+.image{  
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    object-fit: cover;
+    animation-name: giro;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-duration: normal;
+    animation-timing-function: linear;
+}
+.controls-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes giro{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
